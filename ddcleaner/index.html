@@ -35,7 +35,7 @@
 				height:350px;
 				position: relative;
 				padding: 30px 15px 2px 15px;
-				margin-top:44%;
+				margin-top:0px;
 			}
 			.download-text img{
 				width: 100%;
@@ -83,28 +83,26 @@
 			.imgfiexd img{width: 100%;height: 100%;}
 		</style>
 	</head>
-	<body style="background-color: #18181C;">
+	<body style="background-color: #0EA3FF;">
+        <div align="center">
+				<img style="height:112px; width:112px; margin-top: 20px; margin-botton: 20px;" src="./images/logo.png" alt="">
+			  </div>
 		<div class="download">
 			<div class="download-bg">
-				<img src="./images/bgimg1.png" alt="">
+				<img src="./images/bg.png" alt="">
 			</div>
 			<div class="download-text">
-				<!-- <img src="./images/textimg.png" alt=""> -->
 				<div class="text">
-					<p style="margin-bottom: 5px;">天天清理大师</p>
-					<p style="margin: 0;font-size: 13px;">一款专注安卓的专业手机清理软件</p>
-					<div class="text-div">
-						【应用信息】
-						
-						<p>
-							独有的垃圾文件扫描引擎，开放的专业清理规则设置，深度快速释放手机内存，有效解决手机使用过程中的内存不足问题。
-						</p>
-						
-					</div>
+					<p style="margin-bottom: 5px; font-size: 16px;">天天清理大师</p>
+					<p style="margin: 0;font-size: 18px;">点击下方按钮下载</p>
+					<p style="margin: 0;font-size: 18px;">会员1元秒杀大牌手机</p>
 				</div>
+
+        <div align="right">
+				<img style="height:194px; width:263px; margin-top: 20px; margin-botton: 0px;" src="./images/ms.png" alt="">
+			  </div>
 			</div>
 			<div class="download-btn">
-				<a href="" class="iphone"><img src="./images/Iphone.png" alt="" style="display: inline-block;width: 20px; height:20px;"> <span>Iphone版下载</span></a>
 				<a href="https://veduidkk.github.io/dl/ddcleaner_105.apk" class="android downMen"><img src="./images/Android.png" alt="" style="display: inline-block;width: 20px; height:20px;"><span> Android版下载</span></a>
 			</div>
 		</div>
@@ -125,16 +123,6 @@
 				} else {
 					$('.imgfiexd').hide()
 				}
-				
-				var u = navigator.userAgent;
-				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-				if(isiOS){
-					$('.android').hide()
-				}else if(isAndroid){
-					$('.iphone').hide()
-				}
-				
 		</script>
 	</body>
 </html>
