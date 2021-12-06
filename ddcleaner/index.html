@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>天天清理大师APP下载</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style type="text/css">
+			html,body {
+			    margin:0;
+			    padding:0;
+			    overflow: hidden;
+			}
+			.download{
+				height: 100%;
+				
+			}
+			.download-bg {
+			    width: 100%;
+			    height: 100%;
+			    top:0;
+			    z-index: -1; 
+			    position: absolute;
+			}
+			
+			
+			.download-bg img {
+			    display: block;
+			    outline: none;
+			    border:0;
+			    height: 100%;
+			    width: 100%;
+			}
+			.download-text {
+				height:350px;
+				position: relative;
+				padding: 30px 15px 2px 15px;
+				margin-top:44%;
+			}
+			.download-text img{
+				width: 100%;
+				height: 90%;
+			}
+			.download-text .text{
+				background-color: #FFFFFF;
+				border-radius: 18px;
+				padding: 20px 10px;
+			}
+			.text p{
+				text-align: center;
+				color: #009BFF;
+			}
+			.text .text-div,.text .text-div p{
+				color: #009BFF;
+			}
+			.text div{padding: 0 20px 0 15px;margin-top: 15px;}
+			.text div p{color: #333333;text-align: left;margin: 0;font-size: 14px;padding-left: 10px;}
+			.download-btn{display: flex;margin: 0 15px;justify-content: center;}
+			.download-btn a{ 
+				flex: 1;
+				text-align: center;
+				margin: 0 5px; 
+				text-decoration:none;
+				color: #FFFFFF;
+				border-radius: 12px;
+				padding: 15px 0;
+				background-color: #3B7DD6;
+				/* background: -moz-linear-gradient(top, #fe8168 0%, #f72f2a 100%) ;
+			    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe8168), color-stop(100%,#f72f2a))  ;
+			    background: -webkit-linear-gradient(top, #fe8168 0%,#f72f2a 100%) ;
+			    background: -o-linear-gradient(top, #fe8168 0%,#f72f2a 100%) ;
+			    background: -ms-linear-gradient(top, #fe8168 0%,#f72f2a 100%) ; */
+			}
+			.download-btn a span{position: relative;top:2px;}
+			.imgfiexd{
+				position: fixed;
+				z-index: 9;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+			}
+			.imgfiexd img{width: 100%;height: 100%;}
+		</style>
+	</head>
+	<body style="background-color: #18181C;">
+		<div class="download">
+			<div class="download-bg">
+				<img src="./images/bgimg1.png" alt="">
+			</div>
+			<div class="download-text">
+				<!-- <img src="./images/textimg.png" alt=""> -->
+				<div class="text">
+					<p style="margin-bottom: 5px;">天天清理大师</p>
+					<p style="margin: 0;font-size: 13px;">一款专注安卓的专业手机清理软件</p>
+					<div class="text-div">
+						【应用信息】
+						
+						<p>
+							独有的垃圾文件扫描引擎，开放的专业清理规则设置，深度快速释放手机内存，有效解决手机使用过程中的内存不足问题。
+						</p>
+						
+					</div>
+				</div>
+			</div>
+			<div class="download-btn">
+				<a href="" class="iphone"><img src="./images/Iphone.png" alt="" style="display: inline-block;width: 20px; height:20px;"> <span>Iphone版下载</span></a>
+				<a href="https://veduidkk.github.io/dl/ddcleaner_105.apk" class="android downMen"><img src="./images/Android.png" alt="" style="display: inline-block;width: 20px; height:20px;"><span> Android版下载</span></a>
+			</div>
+		</div>
+		<div class="imgfiexd">
+			<img src="./images/mengc.png" alt="">
+		</div>
+		<script type src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+				var ua = navigator.userAgent.toLowerCase();
+				$('.imgfiexd').hide()
+				if(ua.match(/MicroMessenger/i)=="micromessenger") {
+					$('.downMen').click(function(){
+						$('.imgfiexd').show()
+					})
+					$('.imgfiexd').click(function(){
+						$('.imgfiexd').hide()
+					})
+				} else {
+					$('.imgfiexd').hide()
+				}
+				
+				var u = navigator.userAgent;
+				var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				if(isiOS){
+					$('.android').hide()
+				}else if(isAndroid){
+					$('.iphone').hide()
+				}
+				
+		</script>
+	</body>
+</html>
