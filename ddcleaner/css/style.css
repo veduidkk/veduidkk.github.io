@@ -136,6 +136,11 @@ html {
 
 body {
     padding-top: 0px;
+    background: -moz-linear-gradient(90deg, #48ae4c, #63d868);
+    background: -webkit-linear-gradient(90deg, #48ae4c, #63d868);
+    background: -o-linear-gradient(90deg, #48ae4c, #63d868);
+    background: -ms-linear-gradient(90deg, #48ae4c, #63d868);
+    background: linear-gradient(90deg, #48ae4c, #63d868);
 }
 
 .header_nav, .navbar-fixed-top {
