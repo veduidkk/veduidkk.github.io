@@ -1,128 +1,92 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>天天清理大师APP下载</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<style type="text/css">
-			html,body {
-			    margin:0;
-			    padding:0;
-			    overflow: hidden;
-			}
-			.download{
-				height: 100%;
-				
-			}
-			.download-bg {
-			    width: 100%;
-			    height: 100%;
-			    top:0;
-			    z-index: -1; 
-			    position: absolute;
-			}
-			
-			
-			.download-bg img {
-			    display: block;
-			    outline: none;
-			    border:0;
-			    height: 100%;
-			    width: 100%;
-			}
-			.download-text {
-				height:350px;
-				position: relative;
-				padding: 30px 15px 2px 15px;
-				margin-top:0px;
-			}
-			.download-text img{
-				width: 100%;
-				height: 90%;
-			}
-			.download-text .text{
-				background-color: #FFFFFF;
-				border-radius: 18px;
-				padding: 20px 10px;
-			}
-			.text p{
-				text-align: center;
-				color: #009BFF;
-			}
-			.text .text-div,.text .text-div p{
-				color: #009BFF;
-			}
-			.text div{padding: 0 20px 0 15px;margin-top: 15px;}
-			.text div p{color: #333333;text-align: left;margin: 0;font-size: 14px;padding-left: 10px;}
-			.download-btn{display: flex;margin: 0 15px;justify-content: center;}
-			.download-btn a{ 
-				flex: 1;
-				text-align: center;
-				margin: 0 5px; 
-				text-decoration:none;
-				color: #FFFFFF;
-				border-radius: 12px;
-				padding: 15px 0;
-				background-color: #3B7DD6;
-				/* background: -moz-linear-gradient(top, #fe8168 0%, #f72f2a 100%) ;
-			    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe8168), color-stop(100%,#f72f2a))  ;
-			    background: -webkit-linear-gradient(top, #fe8168 0%,#f72f2a 100%) ;
-			    background: -o-linear-gradient(top, #fe8168 0%,#f72f2a 100%) ;
-			    background: -ms-linear-gradient(top, #fe8168 0%,#f72f2a 100%) ; */
-			}
-			.download-btn a span{position: relative;top:2px;}
-			.imgfiexd{
-				position: fixed;
-				z-index: 9;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				top: 0;
-			}
-			.imgfiexd img{width: 100%;height: 100%;}
-		</style>
-	</head>
-	<body style="background-color: #0EA3FF;">
-        <div align="center">
-				<img style="height:112px; width:112px; margin-top: 20px; margin-botton: 20px;" src="./images/logo.png" alt="">
-			  </div>
-		<div class="download">
-			<div class="download-bg">
-				<img src="./images/bg.png" alt="">
-			</div>
-			<div class="download-text">
-				<div class="text">
-					<p style="margin-bottom: 5px; font-size: 16px;">天天清理大师</p>
-					<p style="margin: 0;font-size: 18px;">点击下方按钮下载</p>
-					<p style="margin: 0;font-size: 18px;">会员1元秒杀大牌手机</p>
-				</div>
+<head>
+    <meta charset="UTF-8">
+<title>天天清理大师 - 客户端下载</title>
+  <link rel="shortout icon" href="timg.png" />
+<meta name="description" content="一款专业的手机空间清理软件，使手机运行更流畅，快速解决空间不足问题。"/>
 
-        <div align="right">
-				<img style="height:194px; width:263px; margin-top: 20px; margin-botton: 0px;" src="./images/ms.png" alt="">
-			  </div>
-			</div>
-			<div class="download-btn">
-				<a href="https://veduidkk.github.io/dl/ddcleaner_latest.apk" class="android downMen"><img src="./images/Android.png" alt="" style="display: inline-block;width: 20px; height:20px;"><span> Android版下载</span></a>
-			</div>
-		</div>
-		<div class="imgfiexd">
-			<img src="./images/mengc.png" alt="">
-		</div>
-		<script type src="js/jquery.min.js"></script>
-		<script type="text/javascript">
-				var ua = navigator.userAgent.toLowerCase();
-				$('.imgfiexd').hide()
-				if(ua.match(/MicroMessenger/i)=="micromessenger") {
-					$('.downMen').click(function(){
-						$('.imgfiexd').show()
-					})
-					$('.imgfiexd').click(function(){
-						$('.imgfiexd').hide()
-					})
-				} else {
-					$('.imgfiexd').hide()
-				}
-		</script>
-	</body>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#48ae4c">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="warpper">
+    <div class="header_nav">
+        <div id="head" class="container header_nav">
+          <div class="row">
+            <div class="rowbox">
+              <div class="col-lg-6 col-sm-12 col-md-6" id="news-pic">
+                <p class="welcome_title">天天清理大师</p>
+                <p class="welcome_title">会员专享1元秒杀</p>
+                <p class="welcome_font">一款专业的手机空间清理软件</p>
+                <p class="welcome_down_font"></p>
+                <a href="https://veduidkk.github.io/dl/ddcleaner_latest.apk" onclick="return onDownloadApk(0);">
+                  <button class="btn-lg"><img src="img/android.png" alt="">下载安卓APP</button>
+                </a>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-md-6" id="news-word">
+                <div class="divimg">
+                  <img src="img/index_phone.png" alt="" class="smail">
+                  <div class="lunbo">
+                    <div id="myCarousel" class="carousel slide swiper-wrapper">
+                      <div class="carousel-inner">
+                        <div class="item active swiper-slide">
+                          <img src="img/1.jpeg" alt="First slide">
+                        </div>
+                        <div class="item swiper-slide">
+                          <img src="img/2.jpeg" alt="Second slide">
+                        </div>
+                        <div class="item swiper-slide">
+                          <img src="img/3.jpeg" alt="Third slide">
+                        </div>
+                        <div class="item swiper-slide">
+                          <img src="img/1.jpeg" alt="Second slide">
+                        </div>
+                        <div class="item swiper-slide">
+                          <img src="img/2.jpeg" alt="Second slide">
+                        </div>
+                        <div class="item swiper-slide">
+                          <img src="img/3.jpeg" alt="Second slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control left" href="#myCarousel"
+                                                       data-slide="prev"></a>
+                      <a class="carousel-control right" href="#myCarousel"
+                                                        data-slide="next"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+</div>
+<script type="text/javascript">
+  //设置图片切换时间
+  $(".carousel").carousel({
+      interval: 3000
+    })
+</script>
+
+</div>
+<a href="javascript:void(0);" onclick="onDownloadApk(0);">
+  <div class="under">
+    <img src="img/logo.png" class="under_logo">
+    <div class="under_text">
+      <p class="under_title">天天清理大师</p>
+      <p class="under_info">手机空间清理APP</p>
+    </div>
+    <a href="https://veduidkk.github.io/dl/ddcleaner_latest.apk"><button class="under_btn">下载安卓APP</button></a>
+  </div>
+</a>
+</body>
 </html>
+
