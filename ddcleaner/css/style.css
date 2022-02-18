@@ -121,7 +121,6 @@ body,
 .warpper {
     width: 100%;
     /*height: 100%;*/
-    background: #ffffff;
     /*text-align: center;*/
     overflow-x: hidden;
 }
@@ -135,7 +134,7 @@ html {
 }
 
 body {
-    padding-top: 0px;
+    padding-top: 50px;
     background: -moz-linear-gradient(90deg, #48ae4c, #63d868);
     background: -webkit-linear-gradient(90deg, #48ae4c, #63d868);
     background: -o-linear-gradient(90deg, #48ae4c, #63d868);
@@ -146,11 +145,6 @@ body {
 .header_nav, .navbar-fixed-top {
     height: auto;
     border: none;
-    background: -moz-linear-gradient(90deg, #48ae4c, #63d868);
-    background: -webkit-linear-gradient(90deg, #48ae4c, #63d868);
-    background: -o-linear-gradient(90deg, #48ae4c, #63d868);
-    background: -ms-linear-gradient(90deg, #48ae4c, #63d868);
-    background: linear-gradient(90deg, #48ae4c, #63d868);
 }
 
 #nav-outer {
@@ -1051,7 +1045,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding-top: 0px;
+        padding-top: 50px;
     }
 
     .container {
